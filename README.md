@@ -232,24 +232,24 @@ Le prestataire peut :
 ## 🎨 Aperçu de l'application
 
 ### Accueil admin
-![Page d’accueil](captures/accueil.png)
+![Page d’accueil](accueil.png)
 
 ### Accueil élève
-![Accueil temporaire](captures/accueil-temporaire.png)
+![Accueil temporaire](accueil-temporaire.png)
 
 ### Interface d’administration – dashboard
-![Admin dashboard](captures/dashboard.png)
+![Admin dashboard](dashboard.png)
 ### Session
-![Admin session](captures/creation-session.png)
+![Admin session](creation-session.png)
 ### Module
-![Admin module](captures/creation-module.png)
+![Admin module](creation-module.png)
 
 ### Module – Vue cours
-![Vue cours](captures/cours.png)
+![Vue cours](cours.png)
 ### Module – Vue quiz
-![Vue quiz](captures/quiz.png)
+![Vue quiz](quiz.png)
 ### Module – Vue challenge
-![Vue challenge](captures/challenge.png)
+![Vue challenge](challenge.png)
 
 
 ## 👥 Crédits
