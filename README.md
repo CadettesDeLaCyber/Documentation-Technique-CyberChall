@@ -77,7 +77,7 @@ src/
     ├── js
 ```
 
-## 🔐 Sécurité
+## Sécurité
 
 - **Authentification admin sécurisée** (Spring Security)
 - **Hashage** des mots de passe avec SHA + Base64
