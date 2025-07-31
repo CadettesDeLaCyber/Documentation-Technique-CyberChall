@@ -1,13 +1,13 @@
 
-# 🔐 CyberChall – Application Web de Sensibilisation à la Cybersécurité
+# CyberChall – Application Web de Sensibilisation à la Cybersécurité
 
-## 🎯 Présentation
+## Présentation
 
 **CyberChall** est une application web éducative destinée à accompagner les **Cadettes de la Cyber** dans leurs ateliers de sensibilisation auprès des élèves.  
 Elle propose des **modules interactifs** autour de thématiques cybersécurité (cours, quiz, challenges), accessibles via des **sessions temporaires sécurisées**.  
 Développée avec **Spring Boot**, **Thymeleaf** et **MySQL**, elle respecte la nouvelle **charte graphique** du site officiel des Cadettes de la Cyber.
 
-## 🧰 Technologies
+## Technologies
 
 - **Back-end** : Spring Boot (Java 17)
 - **Front-end** : Thymeleaf, HTML, CSS, JS
@@ -16,7 +16,7 @@ Développée avec **Spring Boot**, **Thymeleaf** et **MySQL**, elle respecte la 
 - **QR Codes** : génération sécurisée via token encodé
 - **Build** : Maven
 
-## 🚀 Installation
+## Installation
 
 ### Prérequis
 - Java 17+
@@ -34,7 +34,7 @@ mvn spring-boot:run
 
 Accessible sur : http://localhost:4040
 
-## 🗂️ Structure du Projet
+## Structure du Projet
 
 ```
 src/
@@ -85,36 +85,36 @@ src/
 - **QR Codes temporaires** pour sessions élèves
 - **Regex de validation** dans les formulaires
 
-## 🧩 Fonctionnalités
+## Fonctionnalités
 
-### 📚 Modules dynamiques
+### Modules dynamiques
 - Dashboard admin : 4 blocks d'accès aux modules, aux sessions, au compte admin et aux statistiques (v2)
 - Création/modification de modules
 - Création de sessions temporaires
 - Chaque module contient des sous-modules composés de  : cours et quiz et d'un challenge final
 - 90% **générés dynamiquement depuis la base de données** et les challenges gérés côté front
 
-### 🧭 Sessions pédagogiques
+### Sessions pédagogiques
 - Création de sessions (durée limitée à 1 mois)
 - Sélection de sous-modules (de 2 à 4 par session)
 - Accès via lien et QR code sécurisé
 - Pas besoin de compte pour les élèves pour la V1
 
-### 🏷️ Étiquettes flottantes
+### Étiquettes flottantes
 - Cliquer sur une étiquette flottante filtre dynamiquement les sous-modules liés à cette thématique (V2)
 
-### 📊 Statistiques (V2 à venir)
+### Statistiques (V2 à venir)
 - Suivi des scores des élèves
 - Détails par session/module
 - Export prévus (PDF, CSV)
 
-## 🎨 IHM (Interface de l'application)
+## IHM (Interface de l'application)
 
 - Conforme à la **nouvelle charte graphique des Cadettes de la Cyber**
 - Couleurs, polices, mise en page responsive
 - Navigation fluide et intuitive
 
-## 🧬 Architecture des Entités
+## Architecture des Entités
 
 ```mermaid
 classDiagram
@@ -187,7 +187,7 @@ classDiagram
     Module --> Challenge : contient
 ```
 
-## 📦 Livraison au prestataire
+## Livraison au prestataire
 
 Le prestataire peut :
 
@@ -206,10 +206,10 @@ Le prestataire peut :
 3. Configurer la base de données (`application.properties`) avec identifiants/accès MySQL.
 
 4. Respecter les dépendances et leur version du fichier pom.xml pour gérer le Build (Maven).
+   
+6. Des données d’exemple sont injectées automatiquement via les fichiers SousModuleDataLoader.java et AdminInitializer.java dans le package "config"— livraison fichier .sql prévu pour alimnetr la base de données (voir avec Aïsha)
 
-⚠️ Des données d’exemple sont injectées automatiquement via les fichiers SousModuleDataLoader.java et AdminInitializer.java dans le package "config"— livraison fichier .sql prévu pour alimnetr la base de données (voir avec Aïsha)
-
-## 🧑‍🏫 Rôles Utilisateurs
+## Rôles Utilisateurs
 
 ### Admin (interface `/admin`)
 - Accédet à un Dashbiard
@@ -222,14 +222,14 @@ Le prestataire peut :
 - Suivre des cours, des quiz, et relever des challenges
 - Visualiser ses scores (V2)
 
-## 📌 Roadmap / Améliorations futures
+## Roadmap / Améliorations futures
 
-- 🎖️ Système de badges
-- 📊 Tableaux de bord + exports CSV/PDF
-- 🧠 Analyse de progression
-- 🔄 Pagination + recherche sur modules via les étiquettes flottantes
+- Système de badges
+- Tableaux de bord + exports CSV/PDF
+- Analyse de progression
+- Pagination + recherche sur modules via les étiquettes flottantes
 
-## 🎨 Aperçu de l'application
+## Aperçu de l'application
 
 ### Accueil admin
 ![Page d’accueil](accueil.png)
@@ -252,7 +252,7 @@ Le prestataire peut :
 ![Vue challenge](challenge.png)
 
 
-## 👥 Crédits
+## Crédits
 
 - **Direction programme** : Charlotte Wojcik & l'Amiral Coustillère  
 - **Cheffe de projet** : Mathilde Douillard
@@ -262,12 +262,12 @@ Le prestataire peut :
 - **Maquettes** : Solène Lemonnier
 - **Développement** : Aïcha Mimouni (mimouni.a@hotmail.fr)
 
-## 📜 Licence
+## Licence
 
 Projet pédagogique propriété des **Cadettes de la Cyber**  
 Usage réservé – reproduction ou redistribution interdite sans autorisation.
 
-## 📬 Contact
+## Contact
 
 - contact@pole-excellence-cyber.org  
 - https://github.com/CadettesDeLaCyber/CyberChall
